@@ -38,18 +38,7 @@ function CreateTask ({addTask}) {
 function Todo() {
     const [tasksRemaining, setTasksRemaining] = useState(0);
     const [tasks, setTasks] = useState([
-        {
-            title: "Grab some Pizza",
-            completed: false
-        },
-        {
-            title: "Do your workout",
-            completed: true
-        },
-        {
-            title: "Hangout with friends",
-            completed: false
-        }
+
     ]);
 
     useEffect(()=>{
@@ -92,7 +81,10 @@ function Todo() {
                         ))}
                     </div>
                
-              
+                    <div className='title'>
+                        <h3>Please enter your task:</h3>
+                    </div>
+
                     <div className='create-task'>
                         <CreateTask addTask={addTask}/>
                     </div>

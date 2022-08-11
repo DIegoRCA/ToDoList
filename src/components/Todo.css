@@ -35,9 +35,16 @@ body {
     font-size: 2em;
     text-align: center;
   }
-  
+  .title{
+   
+      margin: 2.5em 0 0 2.5em;
+      width: 80%;
+      outline: none;
+      border: none;
+      
+  }
   .create-task input[type=text] {
-    margin: 2.5em 2em;
+    margin-left: 2.5em  ;
     width: 80%;
     outline: none;
     border: none;
